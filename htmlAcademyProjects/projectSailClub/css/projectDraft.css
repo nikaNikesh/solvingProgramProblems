@@ -1,0 +1,191 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+
+    color: #163152;
+
+    background-color: #FDFDFF;
+}
+
+img.logo {
+    position: absolute;
+    left: 55px;
+    top: 20px;
+}
+
+nav a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #163152;
+}
+
+h1 {
+    position: absolute;
+    width: 488px;
+    height: 60px;
+    left: 125px;
+    top: 148px;
+
+    font-style: italic;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+h1 + img {
+    position: absolute;
+    left: 55px;
+    top: 248px;
+}
+
+time {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.man-ship-time {
+    position: absolute;
+    width: 251px;
+    height: 18px;
+    left: 125px;
+    top: 834px;
+}
+
+.children-time {
+    position: absolute;
+    width: 183px;
+    height: 18px;
+    left: 972px;
+    top: 1196px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    align-items: center;
+}
+
+h2.man-ship {
+    position: absolute;
+    width: 400px;
+    height: 34px;
+    left: 125px;
+    top: 862px;
+}
+
+h2.children {
+    position: absolute;
+    width: 246px;
+    height: 34px;
+    left: 909px;
+    top: 1224px;
+}
+
+.man-ship {
+    position: absolute;
+    left: 555px;
+    top: 834px;
+}
+
+p.man-ship {
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    left: 125px;
+    top: 931px;
+
+    text-align: right;
+}
+
+p.children {
+    position: absolute;
+    width: 400px;
+    height: 96px;
+    left: 755px;
+    top: 1293px;
+}
+
+.children {
+    position: absolute;
+    left: 125px;
+    top: 1196px;
+}
+
+.map {
+    position: absolute;
+    left: 55px;
+    top: 1568px
+}
+
+img.facebook {
+    position: absolute;
+    left: 840px;
+    top: 1847px;
+}
+
+img.twitter {
+    position: absolute;
+    left: 891px;
+    top: 1847px;
+
+
+img.instagram {
+    position: absolute;
+    left: 946px;
+    top: 1846px;
+}
+
+section.contacts h2 {
+    text-align: right;
+}
+
+.contacts-list {
+    line-height: 22px;
+}
+
+ul.contacts-list a {
+    text-decoration: none;
+
+    color: #163152;
+}
+
+.policy a {
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration: none;
+
+    color: #163152;
+}
+
+.copyright
+{
+    font-size: 10px;
+    line-height: 12px;
+}
+
+li.footer-navigation-topic h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+li.footer-navigation-topic a {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #163152;
+}
