@@ -15,84 +15,54 @@ You are given a string sentence that consist of words separated by spaces. Each 
  * @param {string} sentence
  * @return {string}
  */
-let toGoatLatin = function (sentence) {
-    let vowel = ['a', 'e', 'i', 'o', 'u']
-    for (let i = 0; i < sentence.length; i++) {
-        let word = '';
-        let tail = '';
-        let counter = 0;
+//Tigor solution, slow solution
+// let toGoatLatin = function (sentence) {
+//     let vowel = ['a', 'e', 'i', 'o', 'u']
+//
+//     let result = '';
+//
+//     for (let i = 0, wordCount = 1; i < sentence.length; wordCount++) {
+//         let word = '';
+//         let tail = '';
+//
+//         for (; sentence[i] === ' '; i++) {
+//             result += sentence[i];
+//         }
+//
+//         for (let j = 0; sentence[i] !== ' ' && i < sentence.length; i++,  j++) {
+//             if (vowel.includes(sentence[i].toLowerCase()) && j === 0) {
+//                 tail += 'ma';
+//                 word += sentence[i];
+//             } else if (j === 0) {
+//                 tail += sentence[i] + 'ma';
+//             } else {
+//                 word += sentence[i];
+//             }
+//         }
+//
+//         result += (word + tail);
+//
+//         for (let j = wordCount; j > 0 ; j--) {
+//             result += 'a';
+//         }
+//
+//     }
+//     return result;
+// }
+//
+// console.log(toGoatLatin('I speak Goat Latin'));
+// console.log('Imaa peaksmaaa oatGmaaaa atinLmaaaaa');
+// console.log(toGoatLatin('The quick brown fox jumped over the lazy dog'));
+// console.log('heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa')
 
-        for (let j = 0; sentence[i] !== ' ' && i < sentence.length ; j++, i++) {
-            if (vowel.includes(sentence[i].toLowerCase()) && j === 0) {
-                word += sentence[i];
-                tail = 'ma';
-            } else if (j === 0) {
-                tail = sentence[i] + 'ma';
-                counter ++;
-            } else {
-                word += sentence[i];
-                counter ++;
-                let k = 0;
-                while (word.length < word.length + counter) {
-                    word += "a";
-                    k++;
-                }
-            }
-        }
-        word += tail;
-      console.log(word);
-    }
+let toGoatLatin = function (sentence) {
 
 }
 
-toGoatLatin('I speak Goat Latin english');
-/*
-let toGoatLatin = function (sentence) {
-    let newString = '';
-    let resault = '';
-    let counter = 1;
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i + 1] === " ") {
-            counter++;
-            resault += 'ma';
-        } /!*else { if (sentence[i + 2] !== 'a'|| 'e' || 'i' || 'o' || 'u' ||  'A'|| 'E' || 'I' || 'O' || 'U') {
+// let str = "Hello, World";
+//
+// let strings = str.split(' ');
 
-        }*!/
-            resault += sentence[i];
-        }
-    }
-
-    for (let j = 0; j < resault.length; j++) {
-        if (resault[j] === 'ma') {
-           while (resault.length < resault.length + counter) {
-               newString += 'a';
-
-           }
-        } else {
-            newString += resault[j];
-        }
-    }
-
-
-    return newString;
-};
-
-console.log(toGoatLatin('I speak Goat Latin'));*/
-
-
-/*
-let toGoatLatin = function (sentence) {
-    let newString = '';
-    let firstConsonant = '';
-    let vowel = ['a', 'e', 'i', 'o', 'u'];
-    for (let i = 0; i < sentence.length; i++) {
-        if (vowel.includes(sentence[i].toLowerCase()) {
-            newString += sentence[i];
-        } else {
-            firstConsonant = sentence[i];
-        }
-    }
-return newString;
-};
-console.log(toGoatLatin('I speak Goat Latin'));*/
-
+// let arr = ['Hel', 'lo', 'wo', 'rld'];
+//
+// console.log(arr.join());
