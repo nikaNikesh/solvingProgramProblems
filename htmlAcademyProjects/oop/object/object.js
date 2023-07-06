@@ -20,21 +20,36 @@ class User {
     }
 }
 
+let map = new Map();
+
+
+
+
+
+
+new Cat();
+
 // let igor = new User("Igor", "Loshachenko", 26);
 // let veronika = new User("Veronika", "Matsko", 23);
 // let user3 = new User("User3", "Userovich3", 13);
-
+++
 let users = []
 
 for (let i = 1; i < 10; i++) {
     users.push(new User("User" + i, "Userovich" + i, Math.floor(Math.random() * 10 * 5)));
 }
+
+
 //
 // for (let i = 0; i < users.length; i++) {
 //     if (users[i].isAdult()) {
 //         console.log(users[i].name + " is adult");
 //     }
 // }
+
+let user =
+
+
 
 console.log(users);
 

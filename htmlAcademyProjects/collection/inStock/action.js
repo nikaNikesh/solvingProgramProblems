@@ -18,6 +18,7 @@
 
 */
 
+
 var assortmentData = [
     {
         inStock: true,
@@ -59,4 +60,6 @@ var updateCards = function (assortmentData) {
     }
 }
 
+
 updateCards(assortmentData);
+
