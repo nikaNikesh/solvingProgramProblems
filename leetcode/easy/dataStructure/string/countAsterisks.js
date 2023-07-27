@@ -28,7 +28,7 @@ let countAsterisks = function(s) {
             counterBar += 1;
         }
         if (counterBar % 2 === 0 && s[i] === '*') {
-            counterAsterisks += 1;
+            counterAsterisks += 1;  
         }
     }
 return counterAsterisks;
