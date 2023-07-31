@@ -25,3 +25,17 @@ const result = array
     //тут max - промежуточный результат, value - текущий элемент массива.
     .reduce((max, value) => Math.max(max, value), 0);
 console.log(result);
+
+//arrow функция сохраняет лексическое значение this в объекте
+const greeter = {
+    greet: function (name) {
+        console.log('Hello', name);
+    },
+    greetAll: function (names) {
+        names.forEach((name) => {
+            this.greet(name);
+        });
+    }
+};
+greeter.greetAll(['Bob', 'Mark', 'Pete']);
+//функция стрелки не имеет prototype, т.е. на её основе нельзя создать новые объекты
