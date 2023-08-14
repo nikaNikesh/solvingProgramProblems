@@ -17,49 +17,50 @@
 Оформи код в виде функции updateCards, которая принимает на вход массив с данными. Вызови её, передав assortmentData.
 
 */
+//
+//
+// var assortmentData = [
+//     {
+//         inStock: true,
+//         isHit: false
+//     },
+//     {
+//         inStock: false,
+//         isHit: false
+//     },
+//     {
+//         inStock: true,
+//         isHit: true
+//     },
+//     {
+//         inStock: true,
+//         isHit: false
+//     },
+//     {
+//         inStock: false,
+//         isHit: false
+//     }
+// ];
+//
+// var updateCards = function (assortmentData) {
+//     var products = document.querySelectorAll('.good');
+//     for (var i=0; i < assortmentData.length; i++) {
+//         var product = products[i];
+//
+//         if (!assortmentData[i].inStock) {
+//             product.classList.add('good--unavailable');
+//
+//         } else {
+//             product.classList.add('good--available');
+//         }
+//         if (assortmentData[i].isHit) {
+//             product.classList.add('good--hit');
+//         }
+//
+//     }
+// }
+//
+//
+// updateCards(assortmentData);
 
-
-var assortmentData = [
-    {
-        inStock: true,
-        isHit: false
-    },
-    {
-        inStock: false,
-        isHit: false
-    },
-    {
-        inStock: true,
-        isHit: true
-    },
-    {
-        inStock: true,
-        isHit: false
-    },
-    {
-        inStock: false,
-        isHit: false
-    }
-];
-
-var updateCards = function (assortmentData) {
-    var products = document.querySelectorAll('.good');
-    for (var i=0; i < assortmentData.length; i++) {
-        var product = products[i];
-
-        if (!assortmentData[i].inStock) {
-            product.classList.add('good--unavailable');
-
-        } else {
-            product.classList.add('good--available');
-        }
-        if (assortmentData[i].isHit) {
-            product.classList.add('good--hit');
-        }
-
-    }
-}
-
-
-updateCards(assortmentData);
-
+console.log(document.body);
