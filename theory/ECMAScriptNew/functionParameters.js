@@ -1,4 +1,4 @@
-// #parameters #functionParameters #rest #spread #параметрыПоУмолчанию #параметрыФункции #ECMAScript2015 #ECMAScript6 #ES6 #2015
+// #parameters #functionParameters  #rest #spread #параметрыПоУмолчанию #параметрыФункции #ECMAScript2015 #ECMAScript6 #ES6 #2015
 //параметры по умолчанию указываются через равно после параметров функции
 function user(name = 'Veronika', age = 24) {
     console.log('Пользователю ' + name + ' ' + age + ' года/лет');
