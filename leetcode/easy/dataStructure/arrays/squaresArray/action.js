@@ -56,3 +56,6 @@ return squareArray;
 // console.log(sortedSquares([-7,-3,2,3,11]));
 console.log(sortedSquares([-2,-2,-1]));
 
+
+
+

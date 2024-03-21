@@ -58,8 +58,7 @@ class Girl extends People {
 }
 let Veronika = new Girl('Veronika', 24, 'brown');
 let people = new People("Igor", 26);
-Veronika.say();
-people.say();
-
 
 //super даёт доступ не только к конструктору наследуемого объекта, но и ко всем его методам
+
+
