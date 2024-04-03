@@ -18,8 +18,12 @@
 - модификаторы доступа
 - облегчение поддерживания, масштабирования и тестирования
 
+### 
+
+`npm init -y` 
 
 ### Установка компилятора TS:
+
 
 `npm install -g typescript`
 
@@ -41,11 +45,11 @@
 
 в соответствующей директории:
 
-`tsc namefaile.ts`
+`tsc namefile.ts`
 
 **Автоматическая компиляция:**
 
-`tsc -w namefaile.ts`
+`tsc -w namefile.ts`
 
 **Удаление комментариев при компиляции:**
 
@@ -82,19 +86,37 @@
 - number
 - string
 - boolean
-- bigInt
-- Symbol
+- bigint — числа больше, чем 253 - 1
+- symbol
 - Array
 - enum - перечисления
 - undefined
 - null
 - any
 - unknown
-- void - функция не возвращает значения
+- void — функция не возвращает значения
 - never — тип для переменной, у которой отсутствие значение. Обычно используется в качестве возвращаемого типа функций, которые генерируют или возвращают ошибку
 
 
+### Работа с функциями 
 
+необязательные параметры идут после основных и помечаются вопр. знаком
+
+```typescript
+function getName(firstName: string, lastName?: string) {
+    if (lastName)
+        return firstName + " " + lastName;
+    else
+        return firstName;
+}
+  
+let name1 = getName("Иван", "Кузнецов");
+console.log(name1); // Иван Кузнецов
+let name2 = getName("Вася");
+console.log(name2); // Вася
+```
+
+* необходима проверка наличия значения, чтобы исключить вывод undefined
 
 
 
